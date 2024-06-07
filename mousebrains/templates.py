@@ -25,7 +25,7 @@ from navis import transforms
 from navis.transforms.templates import TemplateBrain
 
 
-__all__ = ['AllenCCF']
+__all__ = ['AllenCCF', 'register_templates']
 
 # Read in meta data
 fp = os.path.dirname(__file__)
@@ -163,5 +163,7 @@ AllenCCF = _AllenCCF(**template_meta['AllenCCF'])
 
 def register_templates():
     """Register template brains with navis."""
-    for tmp in __all__:
+    templates = (AllenCCF,)
+
+    for tmp in templates:
         transforms.registry.register_templatebrain(tmp, skip_existing=True)
