@@ -1,0 +1,4 @@
+include mousebrains/data/*.json
+include mousebrains/data/*.csv
+include mousebrains/data/*.txt
+include mousebrains/meshes/*.ply

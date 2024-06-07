@@ -1,0 +1,39 @@
+[
+   {
+      "name": "Allen Mouse Brain Common Coordinate Framework V3",
+      "type": "Average",
+      "sex": "Intersex",
+      "voxdims": [
+         10,
+         10,
+         10
+      ],
+      "origin": [
+         0.0,
+         0.0,
+         0.0
+      ],
+      "boundingbox": [
+         0.0,
+         13200,
+         0.0,
+         8000,
+         0.0,
+         11400
+      ],
+      "units": [
+         "microns",
+         "microns",
+         "microns"
+      ],
+      "_navis_units": "1 micron",
+      "description": "An intersex averaged brain formed from 1,675 (1,051 male, 621 females) mouse brains.",
+      "label": "AllenCCF",
+      "dims": [
+         1320,
+         800,
+         1140
+      ],
+      "doi": "10.1016/j.cell.2020.04.007"
+   }
+]
