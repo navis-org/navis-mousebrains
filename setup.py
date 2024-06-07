@@ -23,7 +23,7 @@ setup(
     description='Transforms to map between different mouse (template) brains',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/schlegelp/navis-mousebrains',
+    url='https://github.com/navis/navis-mousebrains',
     author='Philipp Schlegel',
     author_email='pms70@cam.ac.uk',
     keywords='mouse brains template registration brain navis transform',
