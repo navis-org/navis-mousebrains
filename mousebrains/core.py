@@ -233,3 +233,13 @@ def register_transforms():
         target="AllenCCF_coronal",
         transform_type="bridging",
     )
+
+    # Add the transform to go from AllenCCF (coronal) to the test uCT space
+    fp = os.path.join(data_filepath, 'uct-to-ccf_landmarks.csv')
+    lm = pd.read_csv(fp)
+    tr = transforms.TPStransform(lm[['x_ccf', 'y_ccf', 'z_ccf']].values,
+                                 lm[['x_uct', 'y_uct', 'z_uct']].values)
+    transforms.registry.register_transform(transform=tr,
+                                           source='AllenCCF_coronal',
+                                           target='uCT_test',
+                                           transform_type='bridging')
